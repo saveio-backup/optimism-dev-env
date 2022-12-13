@@ -32,6 +32,12 @@ const config: HardhatUserConfig = {
       tags: ['local'],
       chainId: 22891,
     },
+    'dev': {
+      chainId: 22891,
+      url: process.env.CONTRACTS_RPC_URL,
+      deploy,
+      accounts: [privateKey],
+    },
     optimism: {
       url: 'http://127.0.0.1:8545',
       saveDeployments: false,
