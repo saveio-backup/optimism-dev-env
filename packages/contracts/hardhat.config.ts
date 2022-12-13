@@ -250,6 +250,7 @@ if (
     live: true,
     saveDeployments: true,
     tags: [process.env.CONTRACTS_TARGET_NETWORK],
+    chainId: 228991,
   }
 }
 
