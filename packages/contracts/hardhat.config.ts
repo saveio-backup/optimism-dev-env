@@ -30,6 +30,7 @@ const config: HardhatUserConfig = {
       live: false,
       saveDeployments: false,
       tags: ['local'],
+      chainId: 22891,
     },
     optimism: {
       url: 'http://127.0.0.1:8545',
