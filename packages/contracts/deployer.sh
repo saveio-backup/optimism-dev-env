@@ -35,12 +35,12 @@ export ADDRESS_MANAGER_ADDRESS=$(cat "./deployments/$CONTRACTS_TARGET_NETWORK/Li
 
 # First, create two files. One of them contains a list of addresses, the other contains a list of contract names.
 find "./deployments/$CONTRACTS_TARGET_NETWORK" -maxdepth 1 -name '*.json' | xargs cat | jq -r '.address' > addresses.txt
-find "./deployments/$CONTRACTS_TARGET_NETWORK" -maxdepth 1 -name '*.json' | gsed -e "s/.\/deployments\/$CONTRACTS_TARGET_NETWORK\///g" | gsed -e 's/.json//g' > filenames.txt
+find "./deployments/$CONTRACTS_TARGET_NETWORK" -maxdepth 1 -name '*.json' | sed -e "s/.\/deployments\/$CONTRACTS_TARGET_NETWORK\///g" | sed -e 's/.json//g' > filenames.txt
 
 # Start building addresses.json.
 echo "{" >> addresses.json
 # Zip the two files describe above together, then, switch their order and format as JSON.
-paste addresses.txt filenames.txt | gsed -e "s/^\([^ ]\+\)\s\+\([^ ]\+\)/\"\2\": \"\1\",/" >> addresses.json
+paste addresses.txt filenames.txt | sed -e "s/^\([^ ]\+\)\s\+\([^ ]\+\)/\"\2\": \"\1\",/" >> addresses.json
 # Add the address manager alias.
 echo "\"AddressManager\": \"$ADDRESS_MANAGER_ADDRESS\"" >> addresses.json
 # End addresses.json
