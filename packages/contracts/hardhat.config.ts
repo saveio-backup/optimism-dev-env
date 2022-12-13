@@ -30,13 +30,6 @@ const config: HardhatUserConfig = {
       live: false,
       saveDeployments: false,
       tags: ['local'],
-      chainId: 22891,
-    },
-    'dev': {
-      chainId: 228991,
-      url: process.env.CONTRACTS_RPC_URL,
-      deploy,
-      accounts: [privateKey],
     },
     optimism: {
       url: 'http://127.0.0.1:8545',
@@ -244,6 +237,9 @@ if (
   process.env.CONTRACTS_DEPLOYER_KEY &&
   process.env.CONTRACTS_RPC_URL
 ) {
+  if (!config.networks) {
+    config.networks = {}
+  }
   config.networks[process.env.CONTRACTS_TARGET_NETWORK] = {
     accounts: [process.env.CONTRACTS_DEPLOYER_KEY],
     url: process.env.CONTRACTS_RPC_URL,
@@ -252,6 +248,7 @@ if (
     tags: [process.env.CONTRACTS_TARGET_NETWORK],
     chainId: 228991,
   }
+  console.log(config.networks[process.env.CONTRACTS_TARGET_NETWORK])
 }
 
 export default config

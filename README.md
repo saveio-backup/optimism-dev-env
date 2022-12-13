@@ -25,11 +25,11 @@ cd packages/contracts
 yarn install --frozen-lockfile && yarn cache clean
 yarn build
 
-rm -rvf deployments/dev/
+rm -rvf deployments/local/
 
 export CONTRACTS_RPC_URL=http://152.32.217.181:32272
 export CONTRACTS_DEPLOYER_KEY=ac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80
-export CONTRACTS_TARGET_NETWORK=dev
+export CONTRACTS_TARGET_NETWORK=local
 
 # 0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
 
