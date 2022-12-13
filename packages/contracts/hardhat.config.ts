@@ -33,7 +33,7 @@ const config: HardhatUserConfig = {
       chainId: 22891,
     },
     'dev': {
-      chainId: 22891,
+      chainId: 228991,
       url: process.env.CONTRACTS_RPC_URL,
       deploy,
       accounts: [privateKey],
