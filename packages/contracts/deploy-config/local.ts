@@ -1,4 +1,5 @@
 const config = {
+  numDeployConfirmations: 4,
   l1BlockTimeSeconds: 15,
   l2BlockGasLimit: 15_000_000,
   l2ChainId: 17,
