@@ -1,0 +1,69 @@
+curl: option --retry-all-errors: is unknown
+curl: try 'curl --help' or 'curl --manual' for more information
+curl: (22) The requested URL returned error: 404 Not Found
+Importing private key
+INFO [12-15|14:49:48.839] Maximum peer count                       ETH=50 LES=0 total=50
+INFO [12-15|14:49:48.839] Smartcard socket not found, disabling    err="stat /run/pcscd/pcscd.comm: no such file or directory"
+Address: {00000398232e2064f896018496b4b44b3d62751f}
+Initializing Geth node
+INFO [12-15|14:49:51.068] Maximum peer count                       ETH=50 LES=0 total=50
+INFO [12-15|14:49:51.068] Smartcard socket not found, disabling    err="stat /run/pcscd/pcscd.comm: no such file or directory"
+DEBUG[12-15|14:49:51.069] FS scan times                            list=54.419µs set=4.61µs diff=3.192µs
+TRACE[12-15|14:49:51.069] Handled keystore changes                 time=66.307µs
+INFO [12-15|14:49:51.069] Allocated cache and file handles         database=/home/save-dev/saveio/optimism-dev-env/replica/data/geth/chaindata cache=16.00MiB handles=16
+TRACE[12-15|14:49:51.069] Started watching keystore folder         path=/home/save-dev/saveio/optimism-dev-env/replica/data/keystore
+INFO [12-15|14:49:51.073] Writing custom genesis block 
+INFO [12-15|14:49:51.074] Persisted trie from memory database      nodes=50 size=31.28KiB time=230.196µs gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=-1024.00B
+INFO [12-15|14:49:51.074] Successfully wrote genesis state         database=chaindata hash=b983fe…de473a
+INFO [12-15|14:49:51.074] Allocated cache and file handles         database=/home/save-dev/saveio/optimism-dev-env/replica/data/geth/lightchaindata cache=16.00MiB handles=16
+INFO [12-15|14:49:51.076] Writing custom genesis block 
+INFO [12-15|14:49:51.078] Persisted trie from memory database      nodes=50 size=31.28KiB time=478.562µs gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=-1024.00B
+INFO [12-15|14:49:51.078] Successfully wrote genesis state         database=lightchaindata hash=b983fe…de473a
+Starting Geth node
+DEBUG[12-15|14:49:51.122] Sanitizing Go's GC trigger               percent=100
+INFO [12-15|14:49:51.123] Maximum peer count                       ETH=50 LES=0 total=50
+INFO [12-15|14:49:51.123] Smartcard socket not found, disabling    err="stat /run/pcscd/pcscd.comm: no such file or directory"
+DEBUG[12-15|14:49:51.124] FS scan times                            list=44.778µs set=3.292µs diff=1.893µs
+TRACE[12-15|14:49:51.124] Started watching keystore folder         path=/home/save-dev/saveio/optimism-dev-env/replica/data/keystore
+TRACE[12-15|14:49:51.124] Handled keystore changes                 time=79.688µs
+INFO [12-15|14:49:51.124] Starting peer-to-peer node               instance=Geth/v1.9.10-stable/linux-amd64/go1.19.2
+INFO [12-15|14:49:51.124] Allocated trie memory caches             clean=512.00MiB dirty=0.00B
+INFO [12-15|14:49:51.124] Allocated cache and file handles         database=/home/save-dev/saveio/optimism-dev-env/replica/data/geth/chaindata cache=512.00MiB handles=524288
+DEBUG[12-15|14:49:51.134] Chain freezer table opened               database=/home/save-dev/saveio/optimism-dev-env/replica/data/geth/chaindata/ancient table=diffs items=0 size=0.00B
+DEBUG[12-15|14:49:51.135] Chain freezer table opened               database=/home/save-dev/saveio/optimism-dev-env/replica/data/geth/chaindata/ancient table=headers items=0 size=0.00B
+DEBUG[12-15|14:49:51.136] Chain freezer table opened               database=/home/save-dev/saveio/optimism-dev-env/replica/data/geth/chaindata/ancient table=hashes  items=0 size=0.00B
+DEBUG[12-15|14:49:51.136] Chain freezer table opened               database=/home/save-dev/saveio/optimism-dev-env/replica/data/geth/chaindata/ancient table=bodies  items=0 size=0.00B
+DEBUG[12-15|14:49:51.137] Chain freezer table opened               database=/home/save-dev/saveio/optimism-dev-env/replica/data/geth/chaindata/ancient table=receipts items=0 size=0.00B
+INFO [12-15|14:49:51.137] Opened ancient database                  database=/home/save-dev/saveio/optimism-dev-env/replica/data/geth/chaindata/ancient
+INFO [12-15|14:49:51.137] Initialised chain configuration          config="{ChainID: 17 Homestead: 0 DAO: <nil> DAOSupport: false EIP150: 0 EIP155: 0 EIP158: 0 Byzantium: 0 Constantinople: 0 Petersburg: 0 Istanbul: 0, Muir Glacier: 0, Berlin: 0, Engine: clique}"
+INFO [12-15|14:49:51.137] Initialising Ethereum protocol           versions="[64 63]" network=17 dbversion=<nil>
+WARN [12-15|14:49:51.137] Upgrade blockchain database version      from=<nil> to=7
+INFO [12-15|14:49:51.138] Loaded most recent local header          number=0 hash=b983fe…de473a td=1 age=53y8mo3w
+INFO [12-15|14:49:51.138] Loaded most recent local full block      number=0 hash=b983fe…de473a td=1 age=53y8mo3w
+INFO [12-15|14:49:51.138] Loaded most recent local fast block      number=0 hash=b983fe…de473a td=1 age=53y8mo3w
+DEBUG[12-15|14:49:51.138] Reinjecting stale transactions           count=0
+INFO [12-15|14:49:51.138] Regenerated local transaction journal    transactions=0 accounts=0
+INFO [12-15|14:49:51.138] Running in verifier mode                 sync-backend=l2
+INFO [12-15|14:49:51.138] Sanitizing timestamp refresh threshold to 3 minutes 
+INFO [12-15|14:49:51.138] Configured rollup client                 url=http://127.0.0.1:7878 chain-id=17 ctc-deploy-height=8
+INFO [12-15|14:49:57.443] Connected to upstream service 
+ERROR[12-15|14:49:57.445] Cannot get sync status 
+ERROR[12-15|14:50:07.446] Cannot get sync status 
+ERROR[12-15|14:50:17.445] Cannot get sync status 
+ERROR[12-15|14:50:27.446] Cannot get sync status 
+ERROR[12-15|14:50:37.445] Cannot get sync status 
+ERROR[12-15|14:50:47.445] Cannot get sync status 
+ERROR[12-15|14:50:57.445] Cannot get sync status 
+ERROR[12-15|14:51:07.446] Cannot get sync status 
+ERROR[12-15|14:51:17.445] Cannot get sync status 
+ERROR[12-15|14:51:27.446] Cannot get sync status 
+ERROR[12-15|14:51:37.445] Cannot get sync status 
+ERROR[12-15|14:51:47.445] Cannot get sync status 
+ERROR[12-15|14:51:57.446] Cannot get sync status 
+ERROR[12-15|14:52:07.446] Cannot get sync status 
+ERROR[12-15|14:52:17.445] Cannot get sync status 
+ERROR[12-15|14:52:27.446] Cannot get sync status 
+ERROR[12-15|14:52:37.449] Cannot get sync status 
+ERROR[12-15|14:52:47.446] Cannot get sync status 
+ERROR[12-15|14:52:57.445] Cannot get sync status 
+ERROR[12-15|14:53:07.445] Cannot get sync status 

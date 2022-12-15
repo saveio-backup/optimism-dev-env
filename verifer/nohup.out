@@ -1,0 +1,124 @@
+curl: option --retry-all-errors: is unknown
+curl: try 'curl --help' or 'curl --manual' for more information
+curl: (22) The requested URL returned error: 404 Not Found
+Importing private key
+INFO [12-15|14:48:23.181] Maximum peer count                       ETH=50 LES=0 total=50
+INFO [12-15|14:48:23.181] Smartcard socket not found, disabling    err="stat /run/pcscd/pcscd.comm: no such file or directory"
+Address: {00000398232e2064f896018496b4b44b3d62751f}
+Initializing Geth node
+INFO [12-15|14:48:25.234] Maximum peer count                       ETH=50 LES=0 total=50
+INFO [12-15|14:48:25.234] Smartcard socket not found, disabling    err="stat /run/pcscd/pcscd.comm: no such file or directory"
+DEBUG[12-15|14:48:25.234] FS scan times                            list=46.793µs set=3.195µs diff=1.794µs
+TRACE[12-15|14:48:25.234] Handled keystore changes                 time=44.207µs
+DEBUG[12-15|14:48:25.234] FS scan times                            list=12.529µs set=2.254µs diff=1.007µs
+INFO [12-15|14:48:25.234] Allocated cache and file handles         database=/home/save-dev/saveio/optimism-dev-env/verifer/data/geth/chaindata cache=16.00MiB handles=16
+TRACE[12-15|14:48:25.234] Started watching keystore folder         path=/home/save-dev/saveio/optimism-dev-env/verifer/data/keystore
+INFO [12-15|14:48:25.241] Writing custom genesis block 
+INFO [12-15|14:48:25.242] Persisted trie from memory database      nodes=50 size=31.28KiB time=739.343µs gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=-1024.00B
+INFO [12-15|14:48:25.243] Successfully wrote genesis state         database=chaindata hash=b983fe…de473a
+INFO [12-15|14:48:25.243] Allocated cache and file handles         database=/home/save-dev/saveio/optimism-dev-env/verifer/data/geth/lightchaindata cache=16.00MiB handles=16
+INFO [12-15|14:48:25.245] Writing custom genesis block 
+INFO [12-15|14:48:25.246] Persisted trie from memory database      nodes=50 size=31.28KiB time=711.684µs gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=-1024.00B
+INFO [12-15|14:48:25.247] Successfully wrote genesis state         database=lightchaindata hash=b983fe…de473a
+Starting Geth node
+DEBUG[12-15|14:48:25.289] Sanitizing Go's GC trigger               percent=100
+INFO [12-15|14:48:25.289] Maximum peer count                       ETH=50 LES=0 total=50
+INFO [12-15|14:48:25.289] Smartcard socket not found, disabling    err="stat /run/pcscd/pcscd.comm: no such file or directory"
+DEBUG[12-15|14:48:25.289] FS scan times                            list=43.309µs set=4.132µs diff=2.149µs
+TRACE[12-15|14:48:25.289] Handled keystore changes                 time=44.123µs
+INFO [12-15|14:48:25.290] Starting peer-to-peer node               instance=Geth/v1.9.10-stable/linux-amd64/go1.19.2
+INFO [12-15|14:48:25.290] Allocated trie memory caches             clean=512.00MiB dirty=0.00B
+INFO [12-15|14:48:25.290] Allocated cache and file handles         database=/home/save-dev/saveio/optimism-dev-env/verifer/data/geth/chaindata cache=512.00MiB handles=524288
+TRACE[12-15|14:48:25.294] Started watching keystore folder         path=/home/save-dev/saveio/optimism-dev-env/verifer/data/keystore
+DEBUG[12-15|14:48:25.304] Chain freezer table opened               database=/home/save-dev/saveio/optimism-dev-env/verifer/data/geth/chaindata/ancient table=headers items=0 size=0.00B
+DEBUG[12-15|14:48:25.305] Chain freezer table opened               database=/home/save-dev/saveio/optimism-dev-env/verifer/data/geth/chaindata/ancient table=hashes  items=0 size=0.00B
+DEBUG[12-15|14:48:25.305] Chain freezer table opened               database=/home/save-dev/saveio/optimism-dev-env/verifer/data/geth/chaindata/ancient table=bodies  items=0 size=0.00B
+DEBUG[12-15|14:48:25.305] Chain freezer table opened               database=/home/save-dev/saveio/optimism-dev-env/verifer/data/geth/chaindata/ancient table=receipts items=0 size=0.00B
+DEBUG[12-15|14:48:25.306] Chain freezer table opened               database=/home/save-dev/saveio/optimism-dev-env/verifer/data/geth/chaindata/ancient table=diffs    items=0 size=0.00B
+INFO [12-15|14:48:25.306] Opened ancient database                  database=/home/save-dev/saveio/optimism-dev-env/verifer/data/geth/chaindata/ancient
+INFO [12-15|14:48:25.306] Initialised chain configuration          config="{ChainID: 17 Homestead: 0 DAO: <nil> DAOSupport: false EIP150: 0 EIP155: 0 EIP158: 0 Byzantium: 0 Constantinople: 0 Petersburg: 0 Istanbul: 0, Muir Glacier: 0, Berlin: 0, Engine: clique}"
+INFO [12-15|14:48:25.306] Initialising Ethereum protocol           versions="[64 63]" network=17 dbversion=<nil>
+WARN [12-15|14:48:25.306] Upgrade blockchain database version      from=<nil> to=7
+INFO [12-15|14:48:25.307] Loaded most recent local header          number=0 hash=b983fe…de473a td=1 age=53y8mo3w
+INFO [12-15|14:48:25.307] Loaded most recent local full block      number=0 hash=b983fe…de473a td=1 age=53y8mo3w
+INFO [12-15|14:48:25.307] Loaded most recent local fast block      number=0 hash=b983fe…de473a td=1 age=53y8mo3w
+DEBUG[12-15|14:48:25.307] Reinjecting stale transactions           count=0
+INFO [12-15|14:48:25.307] Regenerated local transaction journal    transactions=0 accounts=0
+INFO [12-15|14:48:25.307] Running in verifier mode                 sync-backend=l1
+INFO [12-15|14:48:25.307] Sanitizing timestamp refresh threshold to 3 minutes 
+INFO [12-15|14:48:25.307] Configured rollup client                 url=http://127.0.0.1:7878 chain-id=17 ctc-deploy-height=8
+INFO [12-15|14:48:35.897] Connected to upstream service 
+INFO [12-15|14:48:35.897] Initializing initial OVM Context         ctc-deploy-height=8
+INFO [12-15|14:48:37.364] Initialized Latest L1 Info               blocknumber=8 timestamp=1667884729
+INFO [12-15|14:48:37.365] Initial Rollup State                     state=0x7d22ff8d4050a11d0304b8e3bafc4e0f672541e05fa5dbaa50c2af3f7a697269 index=<nil> queue-index=<nil> verified-index=<nil>
+INFO [12-15|14:48:37.375] Allocated fast sync bloom                size=512.00MiB
+INFO [12-15|14:48:37.375] Backend Config                           max-calldata-size=127000 gas-limit=15000000 is-verifier=true using-ovm=true
+INFO [12-15|14:48:37.376] Stored checkpoint snapshot to disk       number=0 hash=b983fe…de473a
+DEBUG[12-15|14:48:37.381] InProc registered                        namespace=admin
+DEBUG[12-15|14:48:37.382] InProc registered                        namespace=admin
+DEBUG[12-15|14:48:37.383] InProc registered                        namespace=debug
+DEBUG[12-15|14:48:37.383] InProc registered                        namespace=web3
+DEBUG[12-15|14:48:37.383] InProc registered                        namespace=eth
+DEBUG[12-15|14:48:37.383] InProc registered                        namespace=eth
+DEBUG[12-15|14:48:37.383] InProc registered                        namespace=eth
+DEBUG[12-15|14:48:37.383] InProc registered                        namespace=rollup
+DEBUG[12-15|14:48:37.383] InProc registered                        namespace=rollup_personal
+DEBUG[12-15|14:48:37.383] InProc registered                        namespace=txpool
+DEBUG[12-15|14:48:37.383] InProc registered                        namespace=debug
+DEBUG[12-15|14:48:37.384] InProc registered                        namespace=debug
+DEBUG[12-15|14:48:37.384] InProc registered                        namespace=eth
+DEBUG[12-15|14:48:37.384] InProc registered                        namespace=personal
+DEBUG[12-15|14:48:37.384] InProc registered                        namespace=clique
+DEBUG[12-15|14:48:37.384] InProc registered                        namespace=eth
+DEBUG[12-15|14:48:37.384] InProc registered                        namespace=eth
+DEBUG[12-15|14:48:37.384] InProc registered                        namespace=eth
+DEBUG[12-15|14:48:37.384] InProc registered                        namespace=miner
+DEBUG[12-15|14:48:37.384] InProc registered                        namespace=eth
+DEBUG[12-15|14:48:37.384] InProc registered                        namespace=admin
+DEBUG[12-15|14:48:37.384] InProc registered                        namespace=debug
+DEBUG[12-15|14:48:37.384] InProc registered                        namespace=debug
+DEBUG[12-15|14:48:37.385] InProc registered                        namespace=net
+DEBUG[12-15|14:48:37.385] HTTP registered                          namespace=debug
+DEBUG[12-15|14:48:37.385] HTTP registered                          namespace=web3
+DEBUG[12-15|14:48:37.385] HTTP registered                          namespace=eth
+DEBUG[12-15|14:48:37.385] HTTP registered                          namespace=eth
+DEBUG[12-15|14:48:37.385] HTTP registered                          namespace=eth
+DEBUG[12-15|14:48:37.385] HTTP registered                          namespace=rollup
+DEBUG[12-15|14:48:37.385] HTTP registered                          namespace=debug
+DEBUG[12-15|14:48:37.385] HTTP registered                          namespace=debug
+DEBUG[12-15|14:48:37.385] HTTP registered                          namespace=eth
+DEBUG[12-15|14:48:37.385] HTTP registered                          namespace=eth
+DEBUG[12-15|14:48:37.385] HTTP registered                          namespace=eth
+DEBUG[12-15|14:48:37.385] HTTP registered                          namespace=eth
+DEBUG[12-15|14:48:37.385] HTTP registered                          namespace=eth
+DEBUG[12-15|14:48:37.385] HTTP registered                          namespace=debug
+DEBUG[12-15|14:48:37.386] HTTP registered                          namespace=debug
+DEBUG[12-15|14:48:37.386] HTTP registered                          namespace=net
+INFO [12-15|14:48:37.386] HTTP endpoint opened                     url=http://0.0.0.0:8645   cors=* vhosts=*
+DEBUG[12-15|14:48:37.386] WebSocket registered                     service=&{stack:0xc000164a00} namespace=web3
+DEBUG[12-15|14:48:37.386] WebSocket registered                     service=&{b:0xc000557800}     namespace=eth
+DEBUG[12-15|14:48:37.386] WebSocket registered                     service=&{b:0xc000557800}     namespace=eth
+DEBUG[12-15|14:48:37.386] WebSocket registered                     service="&{b:0xc000557800 nonceLock:0xc00047d820}" namespace=eth
+DEBUG[12-15|14:48:37.386] WebSocket registered                     service=&{b:0xc000557800}     namespace=rollup
+DEBUG[12-15|14:48:37.386] WebSocket registered                     service=&{am:0xc00011e340}    namespace=eth
+DEBUG[12-15|14:48:37.386] WebSocket registered                     service=&{e:0xc00018ab60}     namespace=eth
+DEBUG[12-15|14:48:37.386] WebSocket registered                     service=&{e:0xc00018ab60}     namespace=eth
+DEBUG[12-15|14:48:37.386] WebSocket registered                     service="&{d:0xc000368000 mux:0xc0003f18f0 installSyncSubscription:0xc00004a780 uninstallSyncSubscription:0xc00004a7e0}" namespace=eth
+DEBUG[12-15|14:48:37.386] WebSocket registered                     service="&{backend:0xc000557800 mux:<nil> quit:<nil> chainDb:0xc0004ce3a0 events:0xc000540420 filtersMu:{state:0 sema:0} filters:map[]}" namespace=eth
+DEBUG[12-15|14:48:37.386] WebSocket registered                     service="&{net:0xc000164f00 networkVersion:17}" namespace=net
+DEBUG[12-15|14:48:37.387] Allowed origin(s) for WS RPC interface [*] 
+INFO [12-15|14:48:37.387] WebSocket endpoint opened                url=ws://[::]:8646
+DEBUG[12-15|14:48:37.381] TCP listener up                          addr=[::]:30304
+INFO [12-15|14:48:37.382] New local node record                    seq=1 id=1a93c6dd1d61104c ip=127.0.0.1 udp=0 tcp=30304
+INFO [12-15|14:48:37.398] Started P2P networking                   self="enode://d64a83fda0412199af48a3c5244ff643cb8526fc369d438510c885e6a7dc0dce185f155332596e2ab827bc35722da7d509d4f97b28cbc27182f058c18ff20f88@127.0.0.1:30304?discport=0"
+INFO [12-15|14:48:37.441] Initialized fast sync bloom              items=50 errorrate=0.000 elapsed=66.078ms
+INFO [12-15|14:48:38.385] Unlocked account                         address=0x00000398232E2064F896018496b4b44b3D62751F
+INFO [12-15|14:48:38.386] Transaction pool price threshold updated price=0
+INFO [12-15|14:48:38.386] Transaction pool price threshold updated price=0
+INFO [12-15|14:48:38.386] Initializing Sync Service 
+INFO [12-15|14:48:38.386] Set L2 Gas Price                         gasprice=1
+INFO [12-15|14:48:38.386] Set L1 Gas Price                         gasprice=1
+INFO [12-15|14:48:38.387] Set batch overhead                       overhead=2750
+INFO [12-15|14:48:38.387] Set scalar                               scalar=1.5
+INFO [12-15|14:48:38.390] Starting Verifier Loop                   poll-interval=500ms timestamp-refresh-threshold=3m0s
+DEBUG[12-15|14:48:39.483] Couldn't add port mapping                proto=tcp extport=30304 intport=30304 interface="UPnP or NAT-PMP" err="no UPnP or NAT-PMP router discovered"
