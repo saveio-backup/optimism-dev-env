@@ -45,6 +45,8 @@ echo "Initializing Geth node"
 echo "Starting Geth node"
 exec ./geth \
   --port 30305 \
+  --identity "replica" \
+  --nat extip:$L2GETH_IP \
   --verbosity="$VERBOSITY" \
   --password ./password \
   --allow-insecure-unlock \

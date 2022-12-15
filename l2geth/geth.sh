@@ -44,6 +44,8 @@ echo "Initializing Geth node"
 # start the geth node
 echo "Starting Geth node"
 exec ./geth \
+  --identity "l2geth" \
+  --nat extip:$L2GETH_IP \
   --verbosity="$VERBOSITY" \
   --password ./password \
   --allow-insecure-unlock \
