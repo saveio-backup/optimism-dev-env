@@ -30,6 +30,7 @@ rm -rvf deployments/local/
 export CONTRACTS_RPC_URL=http://152.32.217.181:32272
 export CONTRACTS_DEPLOYER_KEY=ac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80
 export CONTRACTS_TARGET_NETWORK=local
+export AUTOMATICALLY_TRANSFER_OWNERSHIP=true
 
 # 0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
 
@@ -48,8 +49,8 @@ source dtl.env
 export $(cut -d= -f1 dtl.env)
 
 export URL=http://127.0.0.1:8081/addresses.json
-export DATA_TRANSPORT_LAYER__L1_RPC_ENDPOINT=http://127.0.0.1:9545
-export DATA_TRANSPORT_LAYER__L2_RPC_ENDPOINT=http://127.0.0.1:8545
+export DATA_TRANSPORT_LAYER__L1_RPC_ENDPOINT=http://152.32.217.181:32272
+export DATA_TRANSPORT_LAYER__L2_RPC_ENDPOINT=http://106.75.76.46:8545
 export DATA_TRANSPORT_LAYER__SYNC_FROM_L2=true
 export DATA_TRANSPORT_LAYER__L2_CHAIN_ID=17
 
@@ -62,7 +63,7 @@ export DATA_TRANSPORT_LAYER__L2_CHAIN_ID=17
 source geth.env
 export $(cut -d= -f1 geth.env)
 
-export ETH1_HTTP=http://127.0.0.1:9545
+export ETH1_HTTP=http://152.32.217.181:32272
 export ROLLUP_TIMESTAMP_REFRESH=5s
 export ROLLUP_STATE_DUMP_PATH=http://127.0.0.1:8081/state-dump.latest.json
 export ROLLUP_CLIENT_HTTP=http://127.0.0.1:7878
@@ -82,8 +83,8 @@ export ROLLUP_FEE_THRESHOLD_UP=1.1
 source geth.env
 export $(cut -d= -f1 geth.env)
 
-export ETH1_HTTP=http://127.0.0.1:9545
-export SEQUENCER_CLIENT_HTTP=http://127.0.0.1:8545
+export ETH1_HTTP=http://152.32.217.181:32272
+export SEQUENCER_CLIENT_HTTP=http://106.75.76.46:8545
 export ROLLUP_STATE_DUMP_PATH=http://127.0.0.1:8081/state-dump.latest.json
 export ROLLUP_CLIENT_HTTP=http://127.0.0.1:7878
 export ROLLUP_BACKEND='l1'
@@ -100,8 +101,8 @@ export ROLLUP_VERIFIER_ENABLE='true'
 source geth.env
 export $(cut -d= -f1 geth.env)
 
-export ETH1_HTTP=http://127.0.0.1:9545
-export SEQUENCER_CLIENT_HTTP=http://127.0.0.1:8545
+export ETH1_HTTP=http://152.32.217.181:32272
+export SEQUENCER_CLIENT_HTTP=http://106.75.76.46:8545
 export ROLLUP_STATE_DUMP_PATH=http://127.0.0.1:8081/state-dump.latest.json
 export ROLLUP_CLIENT_HTTP=http://127.0.0.1:7878
 export ROLLUP_BACKEND='l2'
@@ -118,8 +119,8 @@ export RETRIES=60
 source batch-submitter.env
 export $(cut -d= -f1 batch-submitter.env)
 
-export L1_ETH_RPC=http://127.0.0.1:9545
-export L2_ETH_RPC=http://127.0.0.1:8545
+export L1_ETH_RPC=http://152.32.217.181:32272
+export L2_ETH_RPC=http://106.75.76.46:8545
 export URL=http://127.0.0.1:8081/addresses.json
 export BATCH_SUBMITTER_SEQUENCER_PRIVATE_KEY='0x59c6995e998f97a5a0044966f0945389dc9e86dae88c7a8412f4603b6b78690d'
 export BATCH_SUBMITTER_PROPOSER_PRIVATE_KEY='0x5de4111afa1a4b94908f83103eb1f1706367c2e68ca870fc3fb9a804cdab365a'
