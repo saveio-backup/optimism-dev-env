@@ -1,1 +1,10 @@
 ./batch-submitter.sh: 7: [[: not found
+curl: (28) Failed to connect to 106.75.76.46 port 8545: Connection timed out
+curl: (28) Failed to connect to 106.75.76.46 port 8545: Connection timed out
+curl: (28) Failed to connect to 106.75.76.46 port 8545: Connection timed out
+curl: (28) Failed to connect to 106.75.76.46 port 8545: Connection timed out
+curl: (28) Failed to connect to 106.75.76.46 port 8545: Connection timed out
+curl: (28) Failed to connect to 106.75.76.46 port 8545: Connection timed out
+curl: (28) Failed to connect to 106.75.76.46 port 8545: Connection timed out
+curl: (28) Failed to connect to 106.75.76.46 port 8545: Connection timed out
+curl: (28) Failed to connect to 106.75.76.46 port 8545: Connection timed out

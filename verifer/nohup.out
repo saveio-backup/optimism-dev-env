@@ -122,3 +122,5 @@ INFO [12-15|14:48:38.387] Set batch overhead                       overhead=2750
 INFO [12-15|14:48:38.387] Set scalar                               scalar=1.5
 INFO [12-15|14:48:38.390] Starting Verifier Loop                   poll-interval=500ms timestamp-refresh-threshold=3m0s
 DEBUG[12-15|14:48:39.483] Couldn't add port mapping                proto=tcp extport=30304 intport=30304 interface="UPnP or NAT-PMP" err="no UPnP or NAT-PMP router discovered"
+TRACE[12-15|15:03:37.381] Refreshing port mapping                  proto=tcp extport=30304 intport=30304 interface="UPnP or NAT-PMP"
+DEBUG[12-15|15:03:37.381] Couldn't add port mapping                proto=tcp extport=30304 intport=30304 interface="UPnP or NAT-PMP" err="no UPnP or NAT-PMP router discovered"
